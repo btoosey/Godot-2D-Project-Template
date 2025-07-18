@@ -25,7 +25,8 @@ window/size/window_height_override=720
 [file_customization]
 
 folder_colors={
-"res://scenes/": "orange"
+"res://scenes/": "orange",
+"res://scripts/": "blue"
 }
 
 [rendering]

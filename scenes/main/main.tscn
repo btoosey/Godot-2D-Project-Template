@@ -1,3 +1,21 @@
-[gd_scene format=3 uid="uid://gq26gdg6jtcb"]
+[gd_scene load_steps=5 format=3 uid="uid://gq26gdg6jtcb"]
+
+[ext_resource type="Script" path="res://scripts/main/main.gd" id="1_e1nwt"]
+[ext_resource type="PackedScene" uid="uid://bwu3bgteaeh4e" path="res://scenes/state_machine/state_machine.tscn" id="1_m2aix"]
+[ext_resource type="Script" path="res://scripts/components/state_machines/game_state_machine/game_states/game_start_state.gd" id="2_657sp"]
+[ext_resource type="Script" path="res://scripts/components/state_machines/game_state_machine/game_states/game_play_state.gd" id="3_o63cm"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_e1nwt")
+
+[node name="GameStateMachine" parent="." node_paths=PackedStringArray("initial_state") instance=ExtResource("1_m2aix")]
+initial_state = NodePath("GameStartState")
+
+[node name="GameStartState" type="Node" parent="GameStateMachine"]
+script = ExtResource("2_657sp")
+
+[node name="GamePlayState" type="Node" parent="GameStateMachine"]
+script = ExtResource("3_o63cm")
+state = 1
+
+[editable path="GameStateMachine"]
