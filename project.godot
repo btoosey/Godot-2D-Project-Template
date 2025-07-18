@@ -15,6 +15,15 @@ run/main_scene="res://scenes/main/main.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://assets/icons/icon.svg"
 
+[audio]
+
+buses/default_bus_layout="res://data/resources/audio_buses/default_bus_layout.tres"
+
+[autoload]
+
+MusicPlayer="*res://scenes/audio_players/music_player.tscn"
+SFXPlayer="*res://scenes/audio_players/sfx_player.tscn"
+
 [display]
 
 window/size/viewport_width=640
