@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="Godot 2D Project Template"
-run/main_scene="res://scenes/main/main.tscn"
-config/features=PackedStringArray("4.3", "GL Compatibility")
+run/main_scene="uid://caqmdbpw7kc42"
+config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://assets/icons/icon.svg"
 
 [audio]
