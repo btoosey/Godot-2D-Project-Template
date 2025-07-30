@@ -1,4 +1,4 @@
-extends Node2D
+extends Node
 
 
 @onready var game_state_machine: StateMachine = $GameStateMachine as StateMachine
