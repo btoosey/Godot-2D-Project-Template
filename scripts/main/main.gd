@@ -1,8 +1,8 @@
 extends Node
 
 
-@onready var game_state_machine: StateMachine = $GameStateMachine as StateMachine
+@onready var gameplay_state_machine: StateMachine = $GameplayStateMachine as StateMachine
 
 
 func _ready() -> void:
-	game_state_machine.init()
+	gameplay_state_machine.init()

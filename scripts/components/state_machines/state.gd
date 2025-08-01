@@ -5,7 +5,7 @@ extends Node
 @warning_ignore("unused_signal")
 signal transition_requested(from: State, to: Variant)
 
-enum StateID {START, PLAY}
+enum StateID {PLAY}
 
 @export var state: StateID
 
